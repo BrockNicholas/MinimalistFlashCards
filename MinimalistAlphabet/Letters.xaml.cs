@@ -27,9 +27,12 @@ namespace MinimalistAlphabet
         }
 
         private void OnSwipedLeft(object sender, SwipedEventArgs e)
-        {            
-            Symbol.Text = Convert.ToChar(Symbol.Text.ToCharArray()[0] + 1).ToString();
-        }
+        {
+            if (Helpers.NextValueInRange(Symbol.Text))
+            {
+                Symbol.Text = Convert.ToChar(Symbol.Text.ToCharArray()[0] + 1).ToString();
+            }
+        }        
 
         private void OnSwipedRight(object sender, SwipedEventArgs e)
         {
