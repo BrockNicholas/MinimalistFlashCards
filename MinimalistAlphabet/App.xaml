@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="MinimalistAlphabet.App">
+    <Application.Resources>               
+
+        <Style x:Key="Header" TargetType="Label">
+            <Setter Property="FontAttributes" Value="Bold" />                
+            <Setter Property="FontSize" Value="Large" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+        </Style>
+
+        <Style x:Key="Button" TargetType="Button">                          
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="BackgroundColor" Value="#0398fc" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="Margin">
+                <Setter.Value>
+                    <OnIdiom x:TypeArguments="Thickness" Phone="10,5,10,35" Tablet="10,5,10,35" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="Spacer" TargetType="Label">
+            <Setter Property="Margin">
+                <Setter.Value>
+                    <OnIdiom x:TypeArguments="Thickness" Phone="10,50,10,0" Tablet="10,50,10,0" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="Content" TargetType="Label">
+            <Setter Property="FontAttributes" Value="Bold" />                
+            <Setter Property="FontSize" Value="100" />
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+            <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            <Setter Property="TextColor" Value="White" />
+        </Style>
+        
+    </Application.Resources>
+</Application>
