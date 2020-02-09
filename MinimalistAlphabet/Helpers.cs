@@ -6,9 +6,8 @@ namespace MinimalistAlphabet
     public static class Helpers
     {
 
-        internal static bool NextValueInRange(string str)
-        {
-            int val = str.ToCharArray()[0] + 1;
+        internal static bool NextLetterInRange(int val)
+        {            
 
             if (val >= 65 && val <= 90)
             {
@@ -20,12 +19,8 @@ namespace MinimalistAlphabet
                 return true;
             }
 
-            if (val >= 65 && val <= 90)
-            {
-                return true;
-            }
-
             return false;
         }
+
     }
 }

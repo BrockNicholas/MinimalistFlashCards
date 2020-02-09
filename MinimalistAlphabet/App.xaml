@@ -29,12 +29,29 @@
             </Setter>
         </Style>
 
+        <Style x:Key="Spacer2" TargetType="Label">
+            <Setter Property="HorizontalOptions" Value="Start" />
+            <Setter Property="VerticalOptions" Value="Start" />
+            <Setter Property="Margin">
+                <Setter.Value>
+                    <OnIdiom x:TypeArguments="Thickness" Phone="10,-15,0,0" Tablet="10,-15,0,0" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
         <Style x:Key="Content" TargetType="Label">
             <Setter Property="FontAttributes" Value="Bold" />                
-            <Setter Property="FontSize" Value="100" />
+            <Setter Property="FontSize" Value="200" />
             <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
             <Setter Property="VerticalOptions" Value="CenterAndExpand" />
             <Setter Property="TextColor" Value="White" />
+        </Style>
+
+        <Style x:Key="Back" TargetType="Button">                        
+            <Setter Property="HorizontalOptions" Value="Start" />
+            <Setter Property="VerticalOptions" Value="Start" />
+            <Setter Property="WidthRequest" Value="20" />
+            <Setter Property="HeightRequest" Value="20" />
         </Style>
         
     </Application.Resources>

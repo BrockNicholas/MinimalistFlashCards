@@ -23,7 +23,7 @@ namespace MinimalistAlphabet
 
         private void Lower_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new NavigationPage(new Letters("Lower")));
+            Navigation.PushModalAsync(new Letters("Lower"));
         }
 
         private void Numbers_Clicked(object sender, EventArgs e)
