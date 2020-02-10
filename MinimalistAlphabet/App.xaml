@@ -52,6 +52,16 @@
             <Setter Property="VerticalOptions" Value="Start" />
             <Setter Property="WidthRequest" Value="20" />
             <Setter Property="HeightRequest" Value="20" />
+            <Setter Property="IsVisible">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <OnPlatform.Platforms>
+                            <On Platform="iOS" Value="true" />
+                            <On Platform="Android" Value="false" />                
+                        </OnPlatform.Platforms>
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
         </Style>
         
     </Application.Resources>
