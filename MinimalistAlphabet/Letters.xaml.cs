@@ -66,7 +66,7 @@ namespace MinimalistAlphabet
             }
             else
             {
-                Symbol.Text = (Convert.ToInt32(Symbol.Text) + 1) < 21 ? (Convert.ToInt32(Symbol.Text) + 1).ToString() : Symbol.Text;                               
+                Symbol.Text = (Convert.ToInt32(Symbol.Text) + 1) < 101 ? (Convert.ToInt32(Symbol.Text) + 1).ToString() : Symbol.Text;                               
             }
         }        
 

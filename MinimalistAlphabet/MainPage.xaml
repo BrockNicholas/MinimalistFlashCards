@@ -6,7 +6,7 @@ ios:Page.UseSafeArea="true">
         
         <Button x:Name="Upper" Text="UPPERCASE LETTERS" Style="{StaticResource Button}" />
         <Button x:Name="Lower" Text="lowercase letters" Style="{StaticResource Button}" />
-        <Button x:Name="Numbers" Text="Numbers up to 20" Style="{StaticResource Button}" />        
+        <Button x:Name="Numbers" Text="Numbers" Style="{StaticResource Button}" />        
 
         <Label Text="" Style="{StaticResource Spacer}" />
     </StackLayout>
