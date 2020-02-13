@@ -45,13 +45,25 @@
             <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
             <Setter Property="VerticalOptions" Value="CenterAndExpand" />
             <Setter Property="TextColor" Value="White" />
+            <Setter Property="Margin">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <OnPlatform.Platforms>
+                            <On Platform="iOS" Value="-5,-50,-5,0" />
+                            <On Platform="Android" Value="-5,-50,-5,0" />                
+                        </OnPlatform.Platforms>
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
         </Style>
 
         <Style x:Key="Back" TargetType="Button">                        
             <Setter Property="HorizontalOptions" Value="Start" />
             <Setter Property="VerticalOptions" Value="Start" />
-            <Setter Property="WidthRequest" Value="20" />
-            <Setter Property="HeightRequest" Value="20" />
+            <Setter Property="WidthRequest" Value="30" />
+            <Setter Property="HeightRequest" Value="30" />
+            <Setter Property="Opacity" Value=".3" />
+            <Setter Property="Margin" Value="5,20,5,5" />
             <Setter Property="IsVisible">
                 <Setter.Value>
                     <OnPlatform x:TypeArguments="x:Boolean">
