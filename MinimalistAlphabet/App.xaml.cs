@@ -6,6 +6,9 @@ namespace MinimalistAlphabet
 {
     public partial class App : Application
     {
+        public static bool HasLoadedBefore { get; set; } = false;
+        public static string Selection { get; set; }
+
         public App()
         {
             InitializeComponent();

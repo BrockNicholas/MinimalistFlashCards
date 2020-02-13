@@ -7,13 +7,13 @@ namespace MinimalistAlphabet
 {
     public partial class Letters : ContentPage
     {
-        String initSymbol;
+        String initSymbol;        
 
-        public Letters(string which)
+        public Letters()
         {
             InitializeComponent();            
 
-            switch (which)
+            switch (App.Selection)
             {
                 case "Upper":
                     initSymbol = "A";
@@ -32,9 +32,22 @@ namespace MinimalistAlphabet
                     break;
             }
 
-            Symbol.Text = initSymbol;
-            BackButton.Clicked += BackButton_Clicked;
+            
 
+            Symbol.Text = initSymbol;
+            BackButton.Clicked += BackButton_Clicked;            
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            String alertMessage = "Swipe to next ";
+            alertMessage += App.Selection == "Upper" || App.Selection == "Lower" ? "letter" : "number";
+            if (!App.HasLoadedBefore)
+            {
+                await DisplayAlert(alertMessage, null, "OK");
+                App.HasLoadedBefore = true;
+            }
         }
 
         private void BackButton_Clicked(object sender, EventArgs e)

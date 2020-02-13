@@ -6,7 +6,8 @@ namespace MinimalistAlphabet
 {
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
-    {
+    {        
+
         public MainPage()
         {
             InitializeComponent();
@@ -18,19 +19,25 @@ namespace MinimalistAlphabet
 
         private void Upper_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Letters("Upper"));
+            App.Selection = "Upper";
+            GoToLettersPage();
         }
 
         private void Lower_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Letters("Lower"));
+            App.Selection = "Lower";
+            GoToLettersPage();
         }
 
         private void Numbers_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Letters("Numbers"));
+            App.Selection = "Numbers";
+            GoToLettersPage();
         }        
 
-        
+        private void GoToLettersPage()
+        {
+            Navigation.PushModalAsync(new Letters());
+        }
     }
 }
