@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="MinimalistAlphabet.MainPage" xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
 ios:Page.UseSafeArea="true">
     <StackLayout>
-        <Label Text="Minimalist Flash Cards" Style="{StaticResource Header}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Label Text="AlphaCards" Style="{StaticResource Header}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
         
         <Button x:Name="Upper" Text="UPPERCASE LETTERS" Style="{StaticResource Button}" />
         <Button x:Name="Lower" Text="lowercase letters" Style="{StaticResource Button}" />
