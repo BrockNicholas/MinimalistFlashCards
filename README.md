@@ -5,4 +5,4 @@ Used for learning English letters and numbers (up to 100)
 
 App Store: https://apps.apple.com/us/app/alphacards/id1498870602
 
-Play Store: 
+Play Store: https://play.google.com/store/apps/details?id=com.cosmcomics
