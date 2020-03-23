@@ -30,12 +30,11 @@ namespace MinimalistAlphabet
                 default:
                     initSymbol = "A";
                     break;
-            }
-
-            
+            }            
 
             Symbol.Text = initSymbol;
-            BackButton.Clicked += BackButton_Clicked;            
+            BackButton.Clicked += BackButton_Clicked;
+            SetFont();
         }
 
         protected override async void OnAppearing()
@@ -84,6 +83,14 @@ namespace MinimalistAlphabet
                 int next = Convert.ToInt32(Symbol.Text) - 1;
                 if (next > 0)
                     Symbol.Text = next.ToString();
+            }
+        }
+
+        private void SetFont()
+        {
+            if (App.IsSerif)
+            {
+                Symbol.SetDynamicResource(VisualElement.StyleProperty, "Serif");
             }
         }
     }

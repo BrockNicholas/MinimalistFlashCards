@@ -13,7 +13,7 @@ ios:Page.UseSafeArea="true">
                 <Button x:Name="BackButton" Image="Arrow.png" Style="{StaticResource Back}" />
             </StackLayout>
 
-            <Label x:Name="Symbol" Text="" Style="{StaticResource Content}" />
+            <Label x:Name="Symbol" Text="" Style="{DynamicResource Content}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

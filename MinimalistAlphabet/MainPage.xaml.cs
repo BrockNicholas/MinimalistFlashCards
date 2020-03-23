@@ -15,6 +15,7 @@ namespace MinimalistAlphabet
             Upper.Clicked += Upper_Clicked;
             Lower.Clicked += Lower_Clicked;
             Numbers.Clicked += Numbers_Clicked;
+            Serif.Toggled += Serif_Toggled;
         }
 
         private void Upper_Clicked(object sender, EventArgs e)
@@ -38,6 +39,11 @@ namespace MinimalistAlphabet
         private void GoToLettersPage()
         {
             Navigation.PushModalAsync(new Letters());
+        }
+
+        private void Serif_Toggled(object sender, EventArgs e)
+        {
+            App.IsSerif = Serif.IsToggled;
         }
     }
 }

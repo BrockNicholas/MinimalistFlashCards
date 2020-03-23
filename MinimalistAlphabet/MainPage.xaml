@@ -6,8 +6,11 @@ ios:Page.UseSafeArea="true">
         
         <Button x:Name="Upper" Text="UPPERCASE LETTERS" Style="{StaticResource Button}" />
         <Button x:Name="Lower" Text="lowercase letters" Style="{StaticResource Button}" />
-        <Button x:Name="Numbers" Text="Numbers" Style="{StaticResource Button}" />        
-
+        <Button x:Name="Numbers" Text="Numbers" Style="{StaticResource Button}" />                
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="Serif Fonts" VerticalTextAlignment="Center" />
+            <Switch x:Name="Serif" />
+        </StackLayout>
         <Label Text="" Style="{StaticResource Spacer}" />
     </StackLayout>
 </ContentPage>

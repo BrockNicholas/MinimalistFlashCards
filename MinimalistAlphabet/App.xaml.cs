@@ -8,6 +8,7 @@ namespace MinimalistAlphabet
     {
         public static bool HasLoadedBefore { get; set; } = false;
         public static string Selection { get; set; }
+        public static bool IsSerif { get; set; }
 
         public App()
         {

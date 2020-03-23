@@ -57,6 +57,17 @@
             </Setter>
         </Style>
 
+        <Style x:Key="Serif" TargetType="Label" BasedOn="{StaticResource Content}">
+            <Setter Property="FontFamily">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Times New Roman" />
+                        <On Platform="Android" Value="serif" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
         <Style x:Key="Back" TargetType="Button">                        
             <Setter Property="HorizontalOptions" Value="Start" />
             <Setter Property="VerticalOptions" Value="Start" />
